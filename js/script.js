@@ -102,14 +102,14 @@ const project_2 = document.getElementById('project_2');
 const project_3 = document.getElementById('project_3');
 
 project_1.addEventListener("click", function(){
-    window.location="/digitalCV.html?data_value=project_01";
+    window.location.href ="/digitalCV.html?data_value=project_01";
 });
 
 project_2.addEventListener("click", function(){
-    window.location="/digitalCV.html?data_value=project_02";
+    window.location.href ="/digitalCV.html?data_value=project_02";
 });
 
 project_3.addEventListener("click", function(){
-    window.location="/digitalCV.html?data_value=project_03";
+    window.location.href ="/digitalCV.html?data_value=project_03";
 });
 
