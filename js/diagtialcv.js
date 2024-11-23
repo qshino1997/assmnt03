@@ -1,7 +1,7 @@
 'use strict';
 
+/* Get param of href when load the page */
 addEventListener("DOMContentLoaded", (event) => {
-    
     var dataValue = location.href.split("data_value=")[1];
     if(dataValue == "project_01"){
         showDetail(1);
@@ -12,9 +12,9 @@ addEventListener("DOMContentLoaded", (event) => {
     }
 });
 
+/* Show infomation match with param getted on href */
 function showDetail(numberProject){
     if(numberProject == 1){
-
         var _project = createObj(1);
         
         document.getElementById('goal_01').innerHTML = _project.goals[0];
@@ -104,6 +104,7 @@ function showDetail(numberProject){
     }
 }
 
+/* Create object match with project clicked */
 function createObj(numberProject){
     var Project = {
         goals : [],

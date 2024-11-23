@@ -352,8 +352,7 @@ ul#ul-list > li::marker{
     margin: 10px 0px;
 }
 
-
-
+/* Hover on button to hide or show at web view */
 @media screen and (min-width: 1024.98px) {
     .grid-daily:hover #btnExperienceS,
     .grid-daily:hover #btnEducationS,
@@ -361,9 +360,9 @@ ul#ul-list > li::marker{
     .grid-daily:hover #btnHobbyS,
     .grid-daily:hover #btnLanguageS,
     .grid-daily:hover #btnSkillS
-{
-    display: block;
-}
+    {
+        display: block;
+    }
 
     #btnExperienceH,
     #btnEducationH,

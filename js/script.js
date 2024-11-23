@@ -2,6 +2,7 @@
 
 const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+/* Hide block information when load web */
 addEventListener("DOMContentLoaded", (event) => {
     document.getElementById('info').style.display = "none";
     document.getElementById('experience').style.display = "none";
@@ -12,6 +13,7 @@ addEventListener("DOMContentLoaded", (event) => {
     document.getElementById('skill').style.display = "none";
 });
 
+/* Add enter event when type mail */
 document.getElementById("lemail").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
@@ -19,7 +21,7 @@ document.getElementById("lemail").addEventListener("keyup", function(event) {
     }
 });
 
-
+/* Check mail */
 function handleChange() {
     let valueOfChange = document.getElementById('lemail').value;
     if(regex.test(valueOfChange)){
@@ -30,7 +32,6 @@ function handleChange() {
         document.getElementById('info').style.display = "none";
         alert("Nhap sai vui long nhap lai");
     }
-
 }
 
 var exp = document.getElementById("experience");
@@ -40,6 +41,7 @@ var hobby = document.getElementById("hobby");
 var language = document.getElementById("language");
 var skill = document.getElementById("skill");
 
+/* Event click to show */
 function handleShowS(classStr) {
     if(classStr == "item1" && exp.style.display == "none"){
         exp.style.display = "";
@@ -69,6 +71,7 @@ function handleShowS(classStr) {
     
 }
 
+/* Event click to hide */
 function handleShowH(classStr) { 
     if(classStr == "item1" && exp.style.display == ""){
         exp.style.display = "none";
@@ -96,20 +99,3 @@ function handleShowH(classStr) {
         document.getElementById('btnSkillH').style.display = "none";
     }
 }
-
-const project_1 = document.getElementById('project_1');
-const project_2 = document.getElementById('project_2');
-const project_3 = document.getElementById('project_3');
-
-project_1.addEventListener("click", function(){
-    window.location.href ="/digitalCV.html?data_value=project_01";
-});
-
-project_2.addEventListener("click", function(){
-    window.location.href ="/digitalCV.html?data_value=project_02";
-});
-
-project_3.addEventListener("click", function(){
-    window.location.href ="/digitalCV.html?data_value=project_03";
-});
-

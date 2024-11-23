@@ -121,6 +121,7 @@
         background-color: aliceblue;
     }
 
+    /* Hover on button to hide or show at mobile view */
     #btnExperienceH,
     #btnEducationH,
     #btnWorkH, 
