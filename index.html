@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/laptop.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="stylesheet" href="./css/tablet.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <title>Assignment02</title>
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="banner-container">
+    <div class="content">
+      <p class="full-name">Vũ Minh Quang</p>
+      <p class="positon">Full Stack Developer</p>
+    </div>
+    
+  </div>
+  <!-- Menu -->
+  <div class="menu">
+    <div class="itemMenu">
+      <i class="icon-user"></i><span>THÔNG TIN</span>
+    </div>
+    <div class="itemMenu">
+      <i class="icon-doc-text-inv"></i><span>LÝ LỊCH</span>
+    </div>
+    <div class="itemName">
+      <h2>Vũ Minh Quang</h2>
+      <p class="pl2">Full Stack Developer</p>
+    </div>
+    <div class="itemMenu">
+      <i class="icon-mail-alt"></i><span>CHỨNG CHỈ</span>
+    </div>
+    <div class="itemMenu"><i class="icon-star-1"></i><span>DỰ ÁN</span></div>
+  </div>
+  <div class="information">
+    <!-- information 1 -->
+    <div class="inf-1">
+      <h2>Mục tiêu nghề nghiệp</h2>
+      <div>
+        <p>
+          Chăm chỉ, siêng năng, chịu được áp lực cao. Em mong muốn tìm một
+          công việc có môi trường ổn định với vị trí Web Developer để không
+          ngừng phát triển bản thân và vận dụng những kiến thức, kinh nghiệm
+          đã có.
+        </p>
+      </div>
+    </div>
+    <!-- information 2  -->
+    <div class="inf-2">
+      <h2>Thông tin cá nhân</h2>
+      <div id="confirmInfo">        
+        <input class="form-control" type="email" id="lemail" name="email" placeholder="Enter email.." onchange="handleChange()"/>
+        <label class="">Hay nhap email de xac thuc</label>
+        <button class="btn btn-primary col-3" type="submit" onclick="handleChange()">Submit</button>
+      </div>
+      <div id="info">
+        <div>
+          <p><b>Giới tính</b>: Nam</p>
+          <p><b>Ngày sinh</b>: 24/10/1997</p>
+          <p><b>Điện thoại</b>: 0933142457</p>
+          <p><b>Email</b>: vumhquangg@gmail.com</p>
+          <p><b>Địa chỉ</b>: P.11, .Q.Tân Bình, TP.HCM</p>
+          <p><b>Website</b>: https://www.facebook.com/quang2410</p>
+        </div>
+        <div class="pbt2">
+          <span><i class="icon-twitter"></i></span>
+          <span><i class="icon-facebook"></i></span>
+          <span><i class="icon-gplus"></i></span>
+          <span><i class="icon-linkedin"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Daily tab  -->
+  <div class="daily">
+    <!-- Experience -->
+    <div class="grid-daily item1">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Kinh nghiệm</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-toolbox"></i></h2>
+        </div>
+      </div>
+      <div>
+        <button id="btnExperienceS" onclick="handleShowS('item1')" class="alert alert-warning"><i class="bi bi-arrow-down-short"></i>View more</button>
+        <button id="btnExperienceH" onclick="handleShowH('item1')" class="alert alert-warning">View less</button>
+      </div>
+      <div id="experience">
+        <ul id="ul-list">
+          <li>
+            <p><b>Full Stack Developer - Công ty RIKAI TECHNOLOGY</b></p>
+            <p>05/2019 - 03/2020</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Xây dựng và hiển thị các màn hình có liên quan đến thông tin
+                của người đặt lịch, người giao hàng, lương,...</li>
+              <li>Có tham gia phát triển một vài màn hình liên quan đến việc đặt
+                lịch và chi phí đặt chỗ.</li>
+              <li>Các công nghệ được dùng: HTML5, Thymeleaf, JavaScript, Jquery, Ajax, Bootstrap,
+                KnockoutJS, Visual Basic, C#, .Net MVC5</li>
+            </ul>
+            </p>
+          </li>
+          <li>
+            <p><b>Full Stack Developer - CÔNG TY FUJINET SYSTEM</b></p>
+            <p>03/2020 - 03/2022</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Xây dựng để hiển thị các màn hình có chức năng, liệt kê, quản
+                lý thông tin về người, chức vụ, ngày công, phiểu yêu cầu,...
+                được chuyển đổi sang C# từ VB dựa trên khung hệ thống có sẵn
+                hoặc một số màn hình có bổ sung thêm chức năng dựa theo TKCT
+                của khách hàng gửi.</li>
+              <li>Xây dựng UI dựa theo yêu cầu của khách hàng thông qua TKCT</li>
+              <li>Chuyển đổi các lệnh query sang hệ quản trị dữ liệu MS SQL
+                Sever từ hệ quản trị dữ liệu Oracle.</li>
+              <li>Các công nghệ được dùng: JavaScript, Jquery, Ajax, Bootstrap, C#, .NET (MVC, API, Razor Pages), MS SQL
+                Sever</li>
+            </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Education -->
+    <div class="grid-daily item3">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Học vấn</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-pencil"></i></h2>
+        </div>
+      </div>
+      <div>
+        <button id="btnEducationS" onclick="handleShowS('item3')" class="alert alert-warning">View more</button>
+        <button id="btnEducationH" onclick="handleShowH('item3')" class="alert alert-warning">View less</button>
+      </div>
+      <div id="education">
+        <ul id="ul-list">
+          <li>
+            <p><b>Cử nhân - ĐH Công nghệ thông tin</b></p>
+            <p>06/2015 - 05/2019</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Chuyên ngành: Kỹ thuật phần mềm</li>
+              <li>GPA:3.2/4</li>
+            </ul>
+            </p>
+          </li>
+          <li>
+            <p><b>FUNiX</b></p>
+            <p>05/2024 - 01/2025</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Tốt nghiệp chứng chỉ lập trình Java</li>
+              <li>GPA: 7/10</li>
+            </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Work -->
+    <div class="grid-daily item2">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Hoạt động</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-toolbox"></i></h2>
+        </div>
+      </div>
+      <div>
+        <button id="btnWorkS" onclick="handleShowS('item2')" class="alert alert-warning">View more</button>
+        <button id="btnWorkH" onclick="handleShowH('item2')" class="alert alert-warning">View less</button>
+      </div>
+      <div id="work">
+        <ul id="ul-list">
+          <li>
+            <p><b>FPT Edu Hackathon 2019</b></p>
+            <p>06/2024 - 05/2025</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Giải 3 bảng A</li>
+              <li>Đề tài: Trang web về phân loại rác thải</li>
+            </ul>
+            </p>
+          </li>
+          <li>
+            <p><b>Câu lạc bộ Z</b></p>
+            <p>06/2024 - 01/2026</p>
+            <p>
+            <ul id="ul-list-detail">
+              <li>Trưởng ban chuyên môn</li>
+            </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Hobby -->
+    <div class="grid-daily item5">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Sở thích</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-telescope"></i></h2>
+        </div>
+        <div>
+          <button id="btnHobbyS" onclick="handleShowS('item5')" class="alert alert-warning">View more</button>
+          <button id="btnHobbyH" onclick="handleShowH('item5')" class="alert alert-warning">View less</button>
+        </div>
+        <div id="hobby">
+          <div>
+            <div><i class="ic-megaphone list-emoji"></i></div>
+            <div>
+              <p>Âm nhạc</p>
+            </div>
+          </div>
+          <div>
+            <div><i class="ic-strategy list-emoji"></i></div>
+            <div>
+              <p>Game</p>
+            </div>
+          </div>
+          <div>
+            <div><i class="ic-hotairballoon list-emoji"></i></div>
+            <div>
+              <p>Du lịch</p>
+            </div>
+          </div>
+          <div>
+            <div><i class="ic-basket list-emoji"></i></div>
+            <div>
+              <p>Nấu ăn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Language -->
+    <div class="grid-daily item6">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Ngôn ngữ</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-mic"></i></h2>
+        </div>
+      </div>
+      <div>
+        <button id="btnLanguageS" onclick="handleShowS('item6')" class="alert alert-warning">View more</button>
+        <button id="btnLanguageH" onclick="handleShowH('item6')" class="alert alert-warning">View less</button>
+      </div>
+      <div id="language">
+        <div>
+          <div>
+            <p>Tiếng Anh - TOEIC</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+        <div>
+          <div>
+            <p>Tiếng Nhật - JLPT N5</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="grid-daily item4">
+      <div>
+        <div class="grid-daily-title">
+          <p class="title-ic">Kỹ Năng</p>
+        </div>
+        <div class="grid-daily-ic">
+          <h2><i class="ic-tools-2"></i></h2>
+        </div>
+      </div>
+      <div>
+        <button id="btnSkillS" onclick="handleShowS('item4')" class="alert alert-warning">View more</button>
+        <button id="btnSkillH" onclick="handleShowH('item4')" class="alert alert-warning">View less</button>
+      </div>
+      <div id="skill">
+        <div>
+          <div>
+            <p>HTML/CSS</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+        <div>
+          <div>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+        <div>
+          <div>
+            <p>Java</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+        <div>
+          <div>
+            <p>C#</p>
+          </div>
+        </div>
+        <div id="list-box">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box" id="untive-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Certificates - Awards -->
+  <div class="evedence">
+    <div>
+      <h2>Chứng Chỉ - Giải thưởng</h2>
+    </div>
+    <!-- Certificates - Awards 1 -->
+    <div class="blockEvedence1 viewPortWeb">
+      <div class="grid-evedence-1">
+        <div>
+          <img alt="cc-mon" class="cc-mon" height="150px" width="150px" src="images/cc-mon.webp" width="100%" />
+        </div>
+        <div>
+          <span>CHỨNG CHỈ LẬP TRÌNH JAVA - FUNIX</span>
+          <ul>
+            <li>Chứng chỉ thuộc chương trình CCDN</li>
+            <li>GPA: 7</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Space div -->
+      <div class="line"></div>
+      <!-- Certificates - Awards 2 -->
+      <div class="grid-evedence-1">
+        <div>
+          <img alt="cc-mon" class="cc-mon" height="150px" width="150px" src="images/cc-mon.webp" width="100%" />
+        </div>
+        <div>
+          <span>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</span>
+          <ul>
+            <li>Chứng chỉ thuộc chương trình CCDN</li>
+            <li>GPA: 7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="viewPortPhone">
+      <div class="grid-evedence-1 blockEvedence2">
+        <div>
+          <img alt="cc-mon" class="cc-mon" height="300px" width="350px" src="images/cc-mon.webp" width="100%" />
+        </div>
+        <div>
+          <span>CHỨNG CHỈ LẬP TRÌNH JAVA - FUNIX</span>
+          <ul>
+            <li>Chứng chỉ thuộc chương trình CCDN</li>
+            <li>GPA: 7</li>
+          </ul>
+        </div>
+      </div>
+      <div class="br"></div>
+      <div class="grid-evedence-1 blockEvedence2">
+        <div>
+          <img alt="cc-mon" class="cc-mon" height="300px" width="350px" src="images/cc-mon.webp" width="100%" />
+        </div>
+        <div>
+          <span>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</span>
+          <ul>
+            <li>Chứng chỉ thuộc chương trình CCDN</li>
+            <li>GPA: 7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Space div  -->
+    <div class="br"></div>
+    <!-- Certificates - Awards 3  -->
+    <div class="grid-evedence-1 blockEvedence2">
+      <div>
+        <img alt="cc-mon" class="cc-mon" height="300px" width="350px" src="images/cc-mon.webp" width="100%" />
+      </div>
+      <div>
+        <span>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</span>
+        <ul>
+          <li>Chứng chỉ thuộc chương trình CCDN</li>
+          <li>GPA: 7/10</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- project -->
+  <div class="project">
+    <div class="project-daily-title">
+      <h2>Dự Án</h2>
+    </div>
+      <!-- project detail 1 -->
+      <div id="project_1">
+        <div>
+          <img alt="cc-mon" height="350px" src="images/cv_per.png" width="350px" />
+        </div>
+        <div class="project_cv brt">
+          <h2><a>CV CÁ NHÂN</a></h2>
+        </div>
+        <div class="project_cv" id="infoProject">
+          <div><span id="icon_year">2021</span></div>
+          <div>
+              <div><span><i class="icon-user"></i> FUNiX</span></div>
+              <div><span><i class="icon-lamp"></i> Developer</span></div>
+          </div>   
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Mô tả</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Nhiệm vụ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Công nghệ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - HTML, CSS
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- project detail 2 -->
+      <div id="project_2">
+        <div>
+          <img alt="cc-mon" height="350px" src="images/cv_per2.png" width="350px" />
+        </div>
+        <div class="project_cv brt">
+          <h2>WEB QUẢN LÝ THÚ CƯNG</h2>
+        </div>
+        <div class="project_cv" id="infoProject">
+          <div><span id="icon_year">2021</span></div>
+          <div>
+              <div><span><i class="icon-user"></i> FUNiX</span></div>
+              <div><span><i class="icon-lamp"></i> Developer</span></div>
+          </div> 
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Mô tả</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, tình trạng tiêm chủng
+              ,... Bao gồm các chức năng thêm / sửa / xoá.
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Nhiệm vụ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Công nghệ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - HTML, CSS, JavaScript
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- project detail 3 -->
+      <div id="project_3">
+        <div>
+          <img alt="cc-mon" height="350px" src="images/cv_per3.png" width="350px" />
+        </div>
+        <div class="project_cv brt">
+          <h2>TRANG WEB TIN TUC</h2>
+        </div>
+        <div class="project_cv" id="infoProject">
+          <div><span id="icon_year">2021</span></div>
+          <div>
+              <div><span><i class="icon-user"></i> FUNiX</span></div>
+              <div><span><i class="icon-lamp"></i> Developer</span></div>
+          </div> 
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Mô tả</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức
+              dựa theo các từ khoá.
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Nhiệm vụ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+            </span>
+          </div>
+        </div>
+        <div id="project_detail" class="project_cv">
+          <div id="project_detail_1">
+            <span>Công nghệ</span>
+          </div>
+          <div id="project_detail_2">
+            <span>
+              - HTML, CSS
+            </span>
+          </div>
+        </div>
+      </div>    
+  </div>
+  <!-- Social network -->
+  <div class="footer-page" id="viewPortWeb">
+    <span><i class="icon-facebook-circled"></i><a href="#">Facebook</a></span>
+    <span><i class="icon-linkedin-circled"></i><a href="#">LikedIn</a></span>
+    <span><i class="icon-github-circled"></i><a href="#">Github</a></span>
+  </div>
+  <div class="footer-page" id="viewPortPhone">
+    <h2><a href="#"><i class="icon-facebook-circled"></i></a></h2>
+    <h2><a href="#"><i class="icon-linkedin-circled"></i></a></h2>
+    <h2><a href="#"><i class="icon-github-circled"></i></a></h2>
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

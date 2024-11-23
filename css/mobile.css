@@ -1,0 +1,212 @@
+@media screen and (max-width: 430px) {
+    .content{
+        background: url("/images/banner.jpg");
+        text-align: center;
+        align-content: center;
+        background-size: cover;
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .menu{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 10px 10px;
+    }
+
+    .menu > div:nth-child(3){
+        display: none;
+    }
+    
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .daily{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .evedence{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 10px;
+        justify-content: center;
+        background-color: aliceblue;
+        opacity: 0.8;
+    }
+
+    .blockEvedence1{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .line{
+        display: none;
+    }
+
+    .br{
+        border: 1px solid tomato;
+    }
+
+    .viewPortWeb{
+        display: none;
+    }
+
+    .viewPortPhone{
+        display: contents;
+    }
+
+    .grid-evedence-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px 10px;
+        justify-content: center;
+    }
+
+    .project img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #icon_year {
+        background-color: cornflowerblue;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 5px;
+        width: 20%;
+        text-align: center;
+    }
+
+    #infoProject{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;    
+    }
+
+    #project_detail{
+        height: auto;
+    }
+
+    #viewPortPhone{
+        display: flex;
+    }
+    
+    #viewPortPhone a {
+        font-size: 40px;
+    }
+
+    #viewPortWeb {
+        display: none;
+    }
+
+    .footer-page{
+        padding: 40px 10px;
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+
+    #btnExperienceH,
+    #btnEducationH,
+    #btnWorkH, 
+    #btnHobbyH,
+    #btnLanguageH,
+    #btnSkillH
+    {
+        display: none;
+        margin: 0;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    #btnExperienceS,
+    #btnEducationS,
+    #btnWorkS,
+    #btnHobbyS,
+    #btnLanguageS,
+    #btnSkillS
+    {
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+        border-radius: 20px;
+    }
+}
+
+.information-project{
+    display: flex; 
+    flex-direction: column; 
+    background-color: azure; 
+    padding: 20px;
+}
+
+.bdr-information-project{
+    border-bottom: 1px solid black;
+}
+
+.bdr-information-project h1{
+    color: blue;
+}
+
+.detail-project{
+    display: flex; 
+    flex-direction: column; 
+    border-bottom: 1px solid black;
+}
+
+.scopes-project{
+    padding: 10px;
+}
+
+.detail-project-2{
+    display: flex; 
+    flex-direction: column;
+}
+
+.number-detail{
+    font-size: 30px;
+    background-color: blueviolet; 
+    border-radius: 50%; 
+    width: 20%; 
+    text-align: center; 
+    margin-top: 5px;
+    color: white;
+    border: 1px solid black;
+}
+
+.detail-project > div:nth-child(1) {
+    text-align: center;
+}
+
+.detail-project i {
+    font-size:36px; 
+    color: black;
+}
+
+.detail-project-2 > div:nth-child(1) {
+    text-align: center;
+}
+
+.detail-project-2 i {
+    font-size:36px; 
+    color: black;
+}
+
+.project-2{
+    background-color: blue;
+}
